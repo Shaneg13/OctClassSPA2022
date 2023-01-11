@@ -62,9 +62,7 @@ app.get("/users/:id", (request, response) => {
 app.post("/add", (request, response) => {
   const num1 = request.body.numberOne;
   const num2 = request.body.numberTwo;
-  const responseBody = {
-    sum: num1 + num2,
-  };
+  const responseBody = { sum: num1 + num2 };
   response.json(responseBody);
 });
 
